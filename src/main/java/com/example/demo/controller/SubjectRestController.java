@@ -17,41 +17,20 @@ import com.example.demo.service.SubjectServiceImpl;
 @RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE, path = "/subject")
 @Primary
 public class SubjectRestController implements ISubjectRestController {
-	@Autowired
-	private SubjectServiceImpl subjectService;
 	
-	//@RequestMapping("/subject")
-	@Override
-	public List<Subject> getAllSubjects(){
-		return subjectService.getAllSubjects();
-	}
+	
 	
 	
 	//@RequestMapping(method=RequestMethod.POST, value="/subject")
 	@Override
-	public String addSubject(@RequestBody Subject subject){
-		 Subject sub = subjectService.addSubject(subject);
+	public String addSubject(){
+		 /*Subject sub = subjectService.addSubject(subject);
 		 if(sub != null) {
 			 return "Gulllaaa record insert ho gya.";
-		 }
-		 return null;
+		 }*/
+		 return "Azure deployment doneeeee";
 	}
 	
 	
-	//@RequestMapping(method=RequestMethod.PUT, value="/subject")
-	@Override
-	public String updateSubject(@PathVariable Integer id,@RequestBody Subject subject){
-		Subject sub = subjectService.updateSubject(id, subject);
-		if(sub != null) {
-			 return "Gulllaaa record update ho gya.\n"+sub ;
-		 }
-		return null;
-	}
 	
-	//@RequestMapping(method=RequestMethod.DELETE, value="/subject")
-	@Override
-	public String deleteSubject(@PathVariable Integer id){
-		subjectService.deleteSubject(id);
-		return "Record Deleted";
-	}
 }
