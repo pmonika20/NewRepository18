@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'JavaSpringBootMona'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_30AD8AFA70664938A804073B9A86B5FF }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1FC020DE48E240B3A10B111ECA8AF6B2 }}
           package: '*.jar'
