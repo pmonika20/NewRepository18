@@ -11,7 +11,7 @@ public class Newpe1Application {
 
 		@GetMapping("/Message")
 	public String message() {
-		return "Gullaa dekho website ban agayi";
+		return "Gullaa dekho website ban agayi, Sahi Batao Gulli";
 	}
 
 	public static void main(String[] args) {
